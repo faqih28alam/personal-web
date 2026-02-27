@@ -23,7 +23,8 @@ export default function AboutSection({ personal }: AboutProps) {
       <div className="flex flex-col md:flex-row items-center gap-12">
         {/* Photo */}
         <div className="flex-shrink-0">
-          <div className="relative w-[280px] h-[340px] md:w-[350px] md:h-[400px] rounded-2xl overflow-hidden shadow-lg">
+          <div className="relative w-[280px] h-[280px] md:w-[350px] md:h-[400px] rounded-full md:rounded-2xl 
+    overflow-hidden shadow-lg mx-auto md:mx-0">
             <Image
               src={personal.photo}
               alt={personal.name}
