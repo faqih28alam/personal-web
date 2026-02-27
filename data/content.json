@@ -1,0 +1,184 @@
+{
+  "personal": {
+    "name": "Faqih Alam",
+    "initials": "FA",
+    "title": "Indie Hacker & Full-Stack Developer",
+    "bio": "I build and ship digital products from scratch to production. Passionate about creating end-to-end solutions and turning ideas into fully functional applications.",
+    "location": "Pondok Aren, South Tangerang, Indonesia",
+    "available": true,
+    "availableText": "Available for new projects",
+    "email": "faqih.alam.ee@gmail.com",
+    "whatsapp": "https://wa.me/6281382376019",
+    "whatsappDisplay": "+62 813-8237-6019",
+    "github": "https://github.com/faqih28alam",
+    "linkedin": "https://www.linkedin.com/in/faqih-alam-b8a325200",
+    "cvUrl": "/faqih-alam-cv.pdf",
+    "photo": "/assets/img/MyPic.jpg"
+  },
+  "techStack": [
+    {
+      "name": "HTML5",
+      "icon": "html5"
+    },
+    {
+      "name": "CSS3",
+      "icon": "css3"
+    },
+    {
+      "name": "JavaScript",
+      "icon": "javascript"
+    },
+    {
+      "name": "Node.js",
+      "icon": "nodejs"
+    },
+    {
+      "name": "Bootstrap",
+      "icon": "bootstrap"
+    },
+    {
+      "name": "Git",
+      "icon": "git"
+    },
+    {
+      "name": "Database",
+      "icon": "database"
+    }
+  ],
+  "experiences": [
+    {
+      "title": "Full Stack Web Developer",
+      "company": "DumbWays Indonesia",
+      "logo": "/assets/img/company-logo.png",
+      "period": "Oct 2025 - Present",
+      "responsibilities": [
+        "Develop Website using JavaScript, React, Node.js, and related technologies",
+        "Providing code reviews and weekly project's report"
+      ],
+      "tags": [
+        "JavaScript",
+        "React",
+        "Node.js",
+        "Postgresql",
+        "Express JS",
+        "Next.js"
+      ]
+    },
+    {
+      "title": "Service Engineer",
+      "company": "PT Deltasondo Raya Sejahtera",
+      "logo": "/assets/img/delta-logo.png",
+      "period": "July 2024 – August 2025",
+      "responsibilities": [
+        "Conducted preventive and corrective maintenance on UPS systems at major data centers.",
+        "Performed Quarterly Preventive Maintenance at Data Center Indonesia, PT. KCI, PT. Datacomm, PT. PDG.",
+        "Performed Startup UPS, battery installation, load testing, and system reliability monitoring.",
+        "Performed 600KVA UPS Rotation (Startup/Shutdown) at Data Center Indonesia MM2100."
+      ],
+      "tags": [
+        "UPS Systems",
+        "Power Systems",
+        "Data Center",
+        "Maintenance"
+      ]
+    },
+    {
+      "title": "Research Assistant",
+      "company": "ELITIA Research Laboratory",
+      "logo": "/assets/img/elitia-logo-removebg.png",
+      "period": "2021 – 2022",
+      "responsibilities": [
+        "Researched industrial automation using PLC ladder diagram programming with Omron CX Programmer and HMI with CX Designer.",
+        "Developed IoT systems using Arduino, Raspberry Pi, NodeMCU ESP8266/32 with MQTT & HTTP protocols.",
+        "Taught college students about industrial automation, PLC, IoT applications, and Machine Learning.",
+        "Created workshops for students on implementing IoT concepts and conducted ML sessions including EDA, feature engineering, model building, evaluation, and deployment."
+      ],
+      "tags": [
+        "PLC",
+        "IoT",
+        "Arduino",
+        "Raspberry Pi",
+        "Machine Learning"
+      ]
+    },
+    {
+      "title": "Network Maintenance Intern",
+      "company": "Telkom Jakarta Barat",
+      "logo": "/assets/img/telkom-logo.svg",
+      "period": "June 2020 – August 2020",
+      "responsibilities": [
+        "Maintained Metropolitan Area Network (MAN) for internet connectivity.",
+        "Fixed and created new network cable routes."
+      ],
+      "tags": [
+        "Networking",
+        "MAN",
+        "Telkom"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Link Hub",
+      "description": "Satukan semua media sosial, portofolio, dan link penting dalam satu halaman profil yang elegan. Dibuat khusus untuk Kreator, UMKM, dan Profesional.",
+      "image": " ",
+      "bgColor": "#4B0082",
+      "tags": [
+        "Next.js",
+        "Express JS",
+        "Supabase DB",
+        "TypeScript"
+      ],
+      "githubUrl": "https://github.com/faqih28alam/Insta-Card",
+      "isPrivate": false,
+      "liveUrl": "https://link-hub-card.vercel.app/"
+    },
+    {
+      "title": "Organic Store",
+      "description": "A modern, high-performance E-commerce starter kit built with the Next.js App Router, Supabase, and Midtrans. This template features real-time inventory updates, secure authentication, and a seamless checkout flow.",
+      "image": " ",
+      "bgColor": "#f58ef5",
+      "tags": [
+        "Next.js",
+        "Supabase",
+        "Midtrans",
+        "TypeScript"
+      ],
+      "githubUrl": "https://github.com/faqih28alam/mini-store-template",
+      "isPrivate": false,
+      "liveUrl": "https://mini-store-template-one.vercel.app/products"
+    },
+    {
+      "title": "Circle App",
+      "description": "Circle App is Social Media Platform to Share your thought, images & follow your all people you want to know.",
+      "image": " ",
+      "bgColor": "#51576b",
+      "tags": [
+        "React JS",
+        "Express JS",
+        "Postgresql",
+        "Prisma ORM",
+        "TypeScript"
+      ],
+      "githubUrl": "https://github.com/faqih28alam/circle-frontend",
+      "isPrivate": true,
+      "liveUrl": " "
+    },
+    {
+      "title": "Smart Journaling",
+      "description": "Product Goal To create an easy-to-use, AI-powered journaling app to help users journal consistently and provide meaningful insights.",
+      "image": "https://github.com/faqih28alam/Smart-Journaling-Assistant/raw/main/media/Journal-App.gif",
+      "bgColor": "#2c52d1",
+      "tags": [
+        "Next.js",
+        "Express JS",
+        "Supabase DB",
+        "Grock API",
+        "TypeScript"
+      ],
+      "githubUrl": "https://github.com/faqih28alam/Smart-Journaling-Assistant",
+      "isPrivate": false,
+      "liveUrl": "https://smart-journaling-assistant.vercel.app/"
+    }
+  ]
+}
