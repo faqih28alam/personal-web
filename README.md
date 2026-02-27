@@ -1,36 +1,107 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Faqih Alam – Personal Portfolio (Next.js + shadcn/ui)
 
 ## Getting Started
 
-First, run the development server:
-
+### 1. Install dependencies
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Run the dev server
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+/app
+  layout.tsx          → Root layout with font & theme provider
+  page.tsx            → Main page (assembles all sections)
+  globals.css         → Global styles + Tailwind
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+/components
+  Navbar.tsx          → Fixed top navbar with dark mode toggle & mobile sheet
+  AboutSection.tsx    → Hero/About section with photo
+  TechStackSection.tsx → Auto-scrolling tech logos
+  WorkExperienceSection.tsx → Experience cards
+  MyProjectSection.tsx → Project grid with GIF support
+  CTASection.tsx      → Contact call-to-action
+  Footer.tsx          → Footer with social links
+  /ui                 → shadcn/ui components (Button, Badge, Card, Sheet)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+/data
+  content.json        → ✅ ALL content lives here — edit this file to update your site
 
-## Deploy on Vercel
+/lib
+  utils.ts            → shadcn utility (cn function)
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Updating Content (No Code Needed!)
+
+All text content is managed in **`/data/content.json`**:
+
+- **Personal info** (name, bio, location, social links) → `personal` object
+- **Tech stack items** → `techStack` array
+- **Work experiences** → `experiences` array
+- **Projects** → `projects` array
+
+### Adding a new project:
+```json
+{
+  "title": "My New App",
+  "description": "Short description here.",
+  "image": "https://your-image-host.com/image.png",
+  "bgColor": "#a8edea",
+  "tags": ["React", "TypeScript"],
+  "githubUrl": "https://github.com/...",
+  "isPrivate": false,
+  "liveUrl": "https://yourapp.com"
+}
+```
+
+### Adding a new experience:
+```json
+{
+  "title": "Your Job Title",
+  "company": "Company Name",
+  "logo": "/assets/img/company-logo.png",
+  "period": "Jan 2024 - Present",
+  "responsibilities": [
+    "What you did",
+    "What else you did"
+  ],
+  "tags": ["React", "Node.js"]
+}
+```
+
+---
+
+## Images
+
+- **Profile photo**: Place in `/public/assets/img/MyPic.jpg`
+- **Company logos**: Place in `/public/assets/img/`
+- **Project images**: Use external URLs (Cloudinary, Vercel, etc.) stored in `content.json`
+- **CV file**: Place in `/public/faqih-alam-cv.pdf`
+
+---
+
+## Dark Mode
+
+Dark mode is built-in via `next-themes`. The toggle button is in the navbar.
+
+---
+
+## Deployment
+
+Deploy easily on [Vercel](https://vercel.com):
+```bash
+npm run build
+```
+Then push to GitHub and connect to Vercel — zero config needed for Next.js.
