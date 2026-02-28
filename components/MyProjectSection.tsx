@@ -35,6 +35,31 @@ export default function MyProjectSection({ projects }: ProjectsProps) {
     return projects.filter((p) => p.tags.includes(activeFilter));
   }, [activeFilter, projects]);
 
+  const ProjectImage = ({ src, alt }: { src: string; alt: string }) => {
+    const [isLoading, setIsLoading] = useState(true);
+
+    return (
+      <div className="relative w-full h-full">
+        {/* Skeleton shimmer */}
+        {isLoading && (
+          <div className="justify-items-center">
+            <div className="absolute inset-0 rounded-lg bg-muted animate-pulse" />
+            <p className="text-white">Load Image ... </p>
+          </div>
+        )}
+        <Image
+          src={src}
+          alt={alt}
+          fill
+          className={`object-contain rounded-lg group-hover:scale-105 transition-all duration-500 ${isLoading ? "opacity-0" : "opacity-100"
+            }`}
+          unoptimized
+          onLoadingComplete={() => setIsLoading(false)}
+        />
+      </div>
+    );
+  };
+
   return (
     <section className="py-16" id="projects">
       <div className="mb-8">
@@ -49,8 +74,8 @@ export default function MyProjectSection({ projects }: ProjectsProps) {
             key={tag}
             onClick={() => setActiveFilter(tag)}
             className={`px-4 py-1.5 rounded-full text-sm font-medium transition-all duration-200 border ${activeFilter === tag
-                ? "bg-blue-600 text-white border-blue-600 shadow-lg shadow-blue-500/20"
-                : "bg-transparent text-muted-foreground border-border/60 hover:border-blue-500/40 hover:text-foreground"
+              ? "bg-blue-600 text-white border-blue-600 shadow-lg shadow-blue-500/20"
+              : "bg-transparent text-muted-foreground border-border/60 hover:border-blue-500/40 hover:text-foreground"
               }`}
           >
             {tag}
@@ -64,7 +89,7 @@ export default function MyProjectSection({ projects }: ProjectsProps) {
           No projects found for &quot;{activeFilter}&quot;
         </div>
       ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div className="grid grid-cols-2 md:grid-cols-2 gap-3 md:gap-5">
           {filtered.map((project, index) => (
             <div
               key={`${project.title}-${index}`}
@@ -72,31 +97,21 @@ export default function MyProjectSection({ projects }: ProjectsProps) {
             >
               {/* Project Image */}
               <div
-                className="relative w-full h-48 flex items-center justify-center p-6 overflow-hidden"
+                className="relative w-full h-36 md:h-48 flex items-center justify-center p-6 overflow-hidden"
                 style={{ backgroundColor: project.bgColor }}
               >
-                <div className="relative w-full h-full">
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    fill
-                    className="object-contain rounded-lg group-hover:scale-105 transition-transform duration-500"
-                    unoptimized
-                  />
-                </div>
-                {/* Overlay shimmer on hover */}
-                <div className="absolute inset-0 bg-blue-500/0 group-hover:bg-blue-500/5 transition-colors duration-300" />
+                <ProjectImage src={project.image} alt={project.title} />
               </div>
 
               {/* Card Content */}
               <div className="p-5">
                 <h3 className="font-bold text-base mb-1.5">{project.title}</h3>
-                <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
+                <p className="text-muted-foreground text-sm mb-4 leading-relaxed line-clamp-3 md:line-clamp-none">
                   {project.description}
                 </p>
 
                 {/* Tags */}
-                <div className="flex flex-wrap gap-1.5 mb-4">
+                <div className="hidden md:flex flex-wrap gap-1.5 mb-4">
                   {project.tags.map((tag) => (
                     <span
                       key={tag}

@@ -33,16 +33,17 @@ export default function Navbar({ personal }: NavbarProps) {
   }, []);
 
   const navLinks = [
-    { label: "Tech Stack", href: "#tech-stack" },
-    { label: "Experience", href: "#experience" },
-    { label: "Projects", href: "#projects" },
+    { label: "Tech Stack", href: "/#tech-stack" },
+    { label: "Experience", href: "/#experience" },
+    { label: "Projects", href: "/#projects" },
+    { label: "About", href: "/about" },
   ];
 
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
-          ? "bg-background/80 backdrop-blur-xl border-b border-border/50 shadow-lg shadow-black/5"
-          : "bg-transparent"
+        ? "bg-background/80 backdrop-blur-xl border-b border-border/50 shadow-lg shadow-black/5"
+        : "bg-transparent"
         }`}
     >
       <div className="container mx-auto px-4 max-w-6xl flex items-center justify-between h-16">
