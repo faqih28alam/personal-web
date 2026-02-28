@@ -124,6 +124,7 @@
       "image": "https://github.com/user-attachments/assets/ecad0767-845f-4393-bd99-12d8ce641f8c",
       "bgColor": "#4B0082",
       "tags": [
+        "Web Development",
         "Next.js",
         "Express JS",
         "Supabase DB",
@@ -139,6 +140,7 @@
       "image": "https://github.com/user-attachments/assets/80d1980d-4716-4d27-a78f-1747eff04579",
       "bgColor": "#f58ef5",
       "tags": [
+        "Web Development",
         "Next.js",
         "Supabase",
         "Midtrans",
@@ -154,6 +156,7 @@
       "image": " ",
       "bgColor": "#51576b",
       "tags": [
+        "Web Development",
         "React JS",
         "Express JS",
         "Postgresql",
@@ -170,6 +173,7 @@
       "image": "https://github.com/faqih28alam/Smart-Journaling-Assistant/raw/main/media/Journal-App.gif",
       "bgColor": "#2c52d1",
       "tags": [
+        "Web Development",
         "Next.js",
         "Express JS",
         "Supabase DB",
@@ -179,6 +183,21 @@
       "githubUrl": "https://github.com/faqih28alam/Smart-Journaling-Assistant",
       "isPrivate": false,
       "liveUrl": "https://smart-journaling-assistant.vercel.app/"
+    },
+    {
+      "title": "Rock-Paper-Scissors (RPS) Classifier",
+      "description": "The Rock-Paper-Scissors (RPS) project is a comprehensive portfolio piece demonstrating the end-to-end Machine Learning lifecycle—from data preprocessing and training to a live web deployment.",
+      "image": "https://raw.githubusercontent.com/faqih28alam/RockPaperScissorsClassifier/main/src/Images/datasetPreview.png",
+      "bgColor": "#42f575",
+      "tags": [
+        "Machine Learning",
+        "Image Processing",
+        "Supervised Learning",
+        "CNN Model"
+      ],
+      "githubUrl": "https://github.com/faqih28alam/Smart-Journaling-Assistant",
+      "isPrivate": false,
+      "liveUrl": "https://rockpapersciapprsclassifier-8tfms7raghjzd586z58bqq.streamlit.app/"
     }
   ]
 }
