@@ -12,11 +12,16 @@ export default function Home() {
     <>
       <Navbar personal={content.personal} />
       <main className="container mx-auto px-4 max-w-6xl">
-        <div className="pt-28 pb-4">
-          <h1 className="text-4xl font-extrabold">Welcome to the Page</h1>
-          <p className="text-muted-foreground mt-2">
-            This content is unique content for introduce my self.
-          </p>
+        <div className="pt-28 pb-2">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-500 text-xs font-semibold mb-4">
+            Portfolio
+          </div>
+          <h1 className="text-4xl font-extrabold tracking-tight">
+            {content.personal.name}
+          </h1>
+          <h2 className="text-lg font-semibold text-muted-foreground">
+            {content.personal.title}
+          </h2>
         </div>
         <AboutSection personal={content.personal} />
         <TechStackSection techStack={content.techStack} />
