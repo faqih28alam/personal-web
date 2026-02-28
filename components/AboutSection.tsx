@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { MapPin, FileText, Github, Linkedin } from "lucide-react";
+import { MapPin, FileText, Github, Linkedin, LinkIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 interface AboutProps {
@@ -15,6 +15,7 @@ interface AboutProps {
     photo: string;
     github: string;
     linkedin: string;
+    linkHub: string;
   };
 }
 
@@ -98,6 +99,15 @@ export default function AboutSection({ personal }: AboutProps) {
                 className="p-2 rounded-lg text-muted-foreground hover:text-foreground hover:bg-muted transition-all duration-200"
               >
                 <Linkedin size={18} />
+              </a>
+              <a
+                href={personal.linkHub ?? "https://link-hub-card.vercel.app/faqih28alam"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 rounded-lg text-muted-foreground hover:text-foreground hover:bg-muted transition-all duration-200"
+                title="All my links"
+              >
+                <LinkIcon size={18} />
               </a>
             </div>
           </div>
