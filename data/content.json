@@ -121,7 +121,7 @@
     {
       "title": "Link Hub",
       "description": "Satukan semua media sosial, portofolio, dan link penting dalam satu halaman profil yang elegan. Dibuat khusus untuk Kreator, UMKM, dan Profesional.",
-      "image": " ",
+      "image": "https://github.com/user-attachments/assets/ecad0767-845f-4393-bd99-12d8ce641f8c",
       "bgColor": "#4B0082",
       "tags": [
         "Next.js",
@@ -136,7 +136,7 @@
     {
       "title": "Organic Store",
       "description": "A modern, high-performance E-commerce starter kit built with the Next.js App Router, Supabase, and Midtrans. This template features real-time inventory updates, secure authentication, and a seamless checkout flow.",
-      "image": " ",
+      "image": "https://github.com/user-attachments/assets/80d1980d-4716-4d27-a78f-1747eff04579",
       "bgColor": "#f58ef5",
       "tags": [
         "Next.js",
