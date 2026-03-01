@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import { MapPin, FileText, Github, Linkedin, LinkIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useState, useEffect } from "react";
 
 interface AboutProps {
   personal: {
@@ -20,6 +23,23 @@ interface AboutProps {
 }
 
 export default function AboutSection({ personal }: AboutProps) {
+  const [isLinkValid, setIsLinkValid] = useState(true);
+
+  useEffect(() => {
+    const checkLink = async () => {
+      try {
+        // Call your own internal API instead of the external link directly
+        const res = await fetch(`/api/check-link?url=${encodeURIComponent(personal.linkHub)}`);
+        const data = await res.json();
+        setIsLinkValid(data.valid);
+      } catch (error) {
+        setIsLinkValid(false);
+      }
+    };
+
+    if (personal.linkHub) checkLink();
+  }, [personal.linkHub]);
+
   return (
     <section className="py-20 mt-4 relative">
       {/* Subtle background glow */}
@@ -101,7 +121,7 @@ export default function AboutSection({ personal }: AboutProps) {
                 <Linkedin size={18} />
               </a>
               <a
-                href={personal.linkHub ?? "https://link-hub-card.vercel.app/faqih28alam"}
+                href={isLinkValid ? personal.linkHub : "https://linktr.ee/faqih28alam"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-lg text-muted-foreground hover:text-foreground hover:bg-muted transition-all duration-200"
