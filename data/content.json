@@ -14,7 +14,8 @@
     "linkedin": "https://www.linkedin.com/in/faqih-alam-b8a325200",
     "cvUrl": "/faqih-alam-cv.pdf",
     "photo": "/assets/img/MyPic.jpg",
-    "linkHub": "https://link-hub-card.vercel.app/faqih28alam"
+    "linkHub": "https://link-hub-card.vercel.app/faqih28alam",
+    "linkHubFallback": "https://linktr.ee/faqih28alam"
   },
   "techStack": [
     {

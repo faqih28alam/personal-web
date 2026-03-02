@@ -19,6 +19,7 @@ interface AboutProps {
     github: string;
     linkedin: string;
     linkHub: string;
+    linkHubFallback: string;
   };
 }
 
@@ -121,7 +122,7 @@ export default function AboutSection({ personal }: AboutProps) {
                 <Linkedin size={18} />
               </a>
               <a
-                href={isLinkValid ? personal.linkHub : "https://linktr.ee/faqih28alam"}
+                href={isLinkValid ? personal.linkHub : personal.linkHubFallback}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-lg text-muted-foreground hover:text-foreground hover:bg-muted transition-all duration-200"
