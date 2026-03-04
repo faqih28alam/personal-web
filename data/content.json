@@ -59,7 +59,7 @@
       "icon": "shadcn"
     },
     {
-      "name": "React",
+      "name": "ReactJS",
       "icon": "react"
     },
     {
@@ -90,15 +90,15 @@
       "logo": "/assets/img/company-logo.png",
       "period": "Oct 2025 - Present",
       "responsibilities": [
-        "Develop Website using JavaScript, React, Node.js, and related technologies",
+        "Develop Website using JavaScript, ReactJS, Node.js, and related technologies",
         "Providing code reviews and weekly project's report"
       ],
       "tags": [
         "JavaScript",
-        "React",
+        "ReactJS",
         "Node.js",
         "Postgresql",
-        "Express JS",
+        "Express.js",
         "Next.js"
       ]
     },
@@ -164,7 +164,7 @@
       "tags": [
         "Web Development",
         "Next.js",
-        "Express JS",
+        "Express.js",
         "Supabase DB",
         "TypeScript"
       ],
@@ -180,7 +180,7 @@
       "tags": [
         "Web Development",
         "Next.js",
-        "Supabase",
+        "Supabase DB",
         "Midtrans",
         "TypeScript"
       ],
@@ -195,8 +195,8 @@
       "bgColor": "#51576b",
       "tags": [
         "Web Development",
-        "React JS",
-        "Express JS",
+        "ReactJS",
+        "Express.js",
         "Postgresql",
         "Prisma ORM",
         "TypeScript"
@@ -213,10 +213,11 @@
       "tags": [
         "Web Development",
         "Next.js",
-        "Express JS",
+        "Express.js",
         "Supabase DB",
         "Grock API",
-        "TypeScript"
+        "TypeScript",
+        "Artificial Intelligence"
       ],
       "githubUrl": "https://github.com/faqih28alam/Smart-Journaling-Assistant",
       "isPrivate": false,
@@ -231,7 +232,8 @@
         "Machine Learning",
         "Image Processing",
         "Supervised Learning",
-        "CNN Model"
+        "CNN Model",
+        "Artificial Intelligence"
       ],
       "githubUrl": "https://github.com/faqih28alam/Smart-Journaling-Assistant",
       "isPrivate": false,
