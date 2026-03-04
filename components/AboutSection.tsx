@@ -52,7 +52,7 @@ export default function AboutSection({ personal }: AboutProps) {
         <div className="flex-shrink-0">
           <div className="relative">
             {/* Glow ring behind photo */}
-            <div className="absolute inset-0 rounded-2xl bg-blue-500/20 blur-xl scale-105" />
+            <div className="absolute w-[260px] h-[260px] md:w-[300px] md:h-[360px] inset-0 md:inset-0 rounded-full md:rounded-2xl bg-blue-500/20 md:bg-blue-500/20 blur-xl md:blur-xl scale-105 md:scale-105" />
             <div className="relative w-[260px] h-[260px] md:w-[300px] md:h-[360px] rounded-full md:rounded-2xl overflow-hidden border border-border/50 shadow-2xl">
               <Image
                 src={personal.photo}
