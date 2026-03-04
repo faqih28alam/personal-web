@@ -45,6 +45,42 @@
     {
       "name": "Database",
       "icon": "database"
+    },
+    {
+      "name": "Go",
+      "icon": "go"
+    },
+    {
+      "name": "Tailwind CSS",
+      "icon": "tailwind"
+    },
+    {
+      "name": "shadcn/ui",
+      "icon": "shadcn"
+    },
+    {
+      "name": "React",
+      "icon": "react"
+    },
+    {
+      "name": "Express.js",
+      "icon": "express"
+    },
+    {
+      "name": "Next.js",
+      "icon": "nextjs"
+    },
+    {
+      "name": "Supabase",
+      "icon": "supabase"
+    },
+    {
+      "name": "PostgreSQL",
+      "icon": "postgresql"
+    },
+    {
+      "name": "Gin",
+      "icon": "gin"
     }
   ],
   "experiences": [
