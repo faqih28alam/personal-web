@@ -157,6 +157,24 @@
   ],
   "projects": [
     {
+      "title": "Learning Portal",
+      "description": "Aplikasi web yang memungkinkan guru membuat soal esai beserta kunci jawaban, siswa menjawab secara online, lalu sistem memberikan skor otomatis berdasarkan kemiripan semantik antara jawaban siswa dan kunci jawaban — menggunakan model NLP ringan tanpa training ulang.",
+      "image": "https://github.com/user-attachments/assets/49e33d74-3c25-4057-bf37-a10b8831493e",
+      "bgColor": "#42f5f5",
+      "tags": [
+        "Web Development",
+        "Machine Learning",
+        "Next.js",
+        "Gin Golang",
+        "Postgresql",
+        "TypeScript",
+        "Artificial Itelligence",
+      ],
+      "githubUrl": "https://github.com/faqih28alam/Learning-Portal",
+      "isPrivate": false,
+      "liveUrl": "https://learning-portal-id.vercel.app/"
+    },
+    {
       "title": "Link Hub",
       "description": "Satukan semua media sosial, portofolio, dan link penting dalam satu halaman profil yang elegan. Dibuat khusus untuk Kreator, UMKM, dan Profesional.",
       "image": "https://github.com/user-attachments/assets/ecad0767-845f-4393-bd99-12d8ce641f8c",
